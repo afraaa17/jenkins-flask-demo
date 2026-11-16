@@ -11,12 +11,12 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: url: 'https://github.com/afraaa17/jenkins-flask-demo.git'
-            }
-        }
+       stage('Checkout') {
+    steps {
+        git branch: 'main',
+            url: 'https://github.com/afraaa17/jenkins-flask-demo.git'
+    }
+}
 
         stage('Build Image') {
             steps {
