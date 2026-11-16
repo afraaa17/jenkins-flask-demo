@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR-USERNAME/jenkins-flask-demo.git'
+                    url: url: 'https://github.com/afraaa17/jenkins-flask-demo.git'
             }
         }
 
